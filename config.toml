@@ -1,5 +1,5 @@
-baseURL                 = "/"
-title                   = "Meu Diário Tech - 2"
+baseURL                 = "https://www.libre.tec.br"
+title                   = "Meu Diário Tech"
 languageCode            = "pt-br"
 defaultContentLanguage  = "pt-br"
 theme                   = "hello-friend-ng"
