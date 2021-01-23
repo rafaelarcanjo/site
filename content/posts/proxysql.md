@@ -27,12 +27,12 @@ Momento de arregaçar as mangas, pegar um café e bora lá!
 ## Desenhando o cenário
 
 | Função | DC | IP |
-| -- | -- | -- |
+| :---: | :---: | :---: |
 | ProxySQL | 01 | 192.168.3.100 |
 | MySQL-01 | 01 | 192.168.3.110 |
 | MySQL-02 | 02 | 192.168.3.111 |
 
-###### O MySQL-01 está em produção, já o 02 será instalado via Docker em um servidor já existente.
+##### O MySQL-01 está em produção, já o 02 será instalado via Docker em um servidor já existente.
 
 ## Configurando os bancos e a replicação
 ### Configurando o MySQL-01 em Produção
