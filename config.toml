@@ -1,4 +1,4 @@
-baseURL                 = https://www.libre.tec.br"
+baseURL                 = "https://www.libre.tec.br"
 title                   = "Meu Diário Tech"
 languageCode            = "pt-br"
 defaultContentLanguage  = "pt-br"
