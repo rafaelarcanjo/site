@@ -88,8 +88,8 @@ disableHugoGeneratorInject            = false
   # Custom footer 
   # If you want, you can easily override the default footer with your own content. 
   #
-  footerLeft = "Criado com <a href=\"http://gohugo.io\">OpenSource</a>"
-  footerRight = "Feito com &#10084;"
+  footerLeft = "Criado com <a href=\"http://gohugo.io\">Hugo</a>"
+  footerRight = "Feito com &#10084; por Rafael Arcanjo"
 
   # Colors for favicons
   #
@@ -155,10 +155,10 @@ disableHugoGeneratorInject            = false
     #copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
 [menu]
-  [[menu.main]]
-    identifier = "about"
-    name       = "Sobre"
-    url        = "about/"
+  #[[menu.main]]
+  #  identifier = "about"
+  #  name       = "Sobre"
+  #  url        = "about/"
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
