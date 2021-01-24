@@ -123,11 +123,11 @@ CREATE USER 'replica'@'192.168.3.110'
     IDENTIFIED BY 'senha_aleatoria';
 GRANT REPLICATION SLAVE ON *.* TO 'replica'@'192.168.3.110';
 FLUSH PRIVILEGES;
-CHANGE MASTER TO MASTER_HOST='192.168.3.110',
-MASTER_USER='replica',
-MASTER_PASSWORD='senha_aleatoria',
-MASTER_LOG_FILE='<File_do_MASTER_STATUS>',
-MASTER_LOG_POS=<Position_do_MASTER_STATUS>;
+    CHANGE MASTER TO MASTER_HOST='192.168.3.110',
+    MASTER_USER='replica',
+    MASTER_PASSWORD='senha_aleatoria',
+    MASTER_LOG_FILE='<File_do_MASTER_STATUS>',
+    MASTER_LOG_POS=<Position_do_MASTER_STATUS>;
 START SLAVE;
 SHOW SLAVE STATUS;
 -- Verifica se tem algum erro, se não, continue a nadar
@@ -141,10 +141,10 @@ SHOW MASTER STATUS;
 root@mysql-01:~# 
 mysql>
 CHANGE MASTER TO MASTER_HOST='192.168.3.111',
-MASTER_USER='replica',
-MASTER_PASSWORD='senha_aleatoria',
-MASTER_LOG_FILE='<File_do_MASTER_STATUS>',
-MASTER_LOG_POS=<Position_do_MASTER_STATUS>;
+    MASTER_USER='replica',
+    MASTER_PASSWORD='senha_aleatoria',
+    MASTER_LOG_FILE='<File_do_MASTER_STATUS>',
+    MASTER_LOG_POS=<Position_do_MASTER_STATUS>;
 START SLAVE;
 SHOW SLAVE STATUS;
 -- Verifica se tem algum erro, se não, continue a nadar
@@ -178,7 +178,8 @@ show databases;
 ```sql
 -- Como está replicado, pode executar em qualquer um dos nodes
 mysql>
-CREATE USER 'monitor'@'192.168.3.100' IDENTIFIED BY 'senha_aleatoria';
+CREATE USER 'monitor'@'192.168.3.100' 
+    IDENTIFIED BY 'senha_aleatoria';
 GRANT SELECT ON *.* TO 'monitor'@'192.168.3.100';
 FLUSH PRIVILEGES;
 ```
