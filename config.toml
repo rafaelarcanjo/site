@@ -26,6 +26,8 @@ disableSitemap                        = false
 disable404                            = false
 disableHugoGeneratorInject            = false
 
+disqusShortname: libre-tec-br.disqus.com
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
