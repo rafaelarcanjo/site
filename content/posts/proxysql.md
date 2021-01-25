@@ -14,11 +14,11 @@ Fui premiado em um job, aonde a ideia é criar um HA (alta disponibilidade) do M
 
 Aqui deixo o meu relato e como foi a implementação.
 
-Por eu ter assinado um contrato de sigilo, não posso falar nomes, IPs, hostnames e várias outras coisas. Será somente a parte documental.
+Por eu assinar um contrato de sigilo, não posso falar nomes, IPs, hostnames e várias outras coisas. Será somente a parte documental.
 
 O ambiente atual é um MySQL rodando em um Debian 9, virtualizado, que fica protegido por um Firewall (não sei especificar qual é), que responde para várias aplicações web (PHP, Node e Ruby).
 
-O meu serviço será configurar um outro MySQL (Oracle Linux) no DC 2, replicando todas as informações do MySQL em produção (DC 1), e após isso, configurar o ProxySQL (distribuição de minha escolha, mas gostei muito de trabalhar com o Oracle Linux), em um outro servidor (DC 1) para realizar o balanceamento de carga.
+O meu serviço será configurar um outro MySQL (Oracle Linux) no DC 2, replicando todas as informações do MySQL em produção (DC 1), e após isso, configurar o ProxySQL (distribuição de minha escolha, mas gostei muito de trabalhar com o Oracle Linux), em outro servidor (DC 1) para realizar o balanceamento de carga.
 
 Talvez futuramente, e eu espero que sim, será criar um HA do próprio ProxySQL fazendo um over fail no próprio Firewall (isso será com o pessoal interno, minha responsabilidade será somente a configuração do segundo ProxySQL, mas espero eu que me deixem participar).
 
@@ -80,7 +80,7 @@ systemctl start docker.service
 systemctl status docker.service
 ```
 
-- Montando o container do MySQL, **atenção com a pasta mysql**, **importante as que as versões sejam iguais**
+- Montando o container do MySQL, **atenção com a pasta mysql**, **importante que as versões sejam iguais**
 ```shell
 [root@mysql-02 ~]#
 docker run \
@@ -116,7 +116,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'user_sistema'@'%';
 FLUSH PRIVILEGES;
 ```
 
-- Preparando a replicação, **atenção com a senha do usuário replica, deve ser a mesma dos dois bancos**
+- Preparando a replicação, **atenção com a senha do usuário replica, deve ser a mesma nos dois bancos**
 ```sql
 mysql>
 CREATE USER 'replica'@'192.168.3.110' 
@@ -171,12 +171,12 @@ root@mysql-01:~#
 mysql>
 show databases;
 -- Se não tiver a base de dados, está funcionando perfeitamente, 
--- agora configurar o ProxySQL
+-- agora é configurar o ProxySQL
 ```
 
 - Criando o usuário de monitoramento, **atenção ao IP, deve ser o mesmo do ProxySQL**
 ```sql
--- Como está replicado, pode executar em qualquer um dos nodes
+-- Como está replicando, pode executar em qualquer um dos nodes
 mysql>
 CREATE USER 'monitor'@'192.168.3.100' 
     IDENTIFIED BY 'senha_aleatoria';
@@ -276,7 +276,7 @@ SELECT * FROM monitor.mysql_server_ping_log;
 ```sql
 mysql>
 INSERT INTO mysql_users (username,password,default_hostgroup) 
-    VALUES ('user_ibri','user_ibri',1);
+    VALUES ('user_xxxx','user_xxxx',1);
 LOAD MYSQL USERS TO RUNTIME;
 SAVE MYSQL USERS TO DISK;
 ```
@@ -297,7 +297,7 @@ SELECT * FROM tabela;
 -- Agora logue no MySQL-01 e pare o banco de dados
 root@mysql-01:~#
 systemctl stop mysql.service
--- Repita a consulta anterior e observe a mágina
+-- Repita a consulta anterior e observe a mágica
 -- Agora inverta, suba o MySQL-01 e pare o MySQL-02
 -- E repita a consulta
 ```
