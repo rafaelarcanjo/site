@@ -152,7 +152,8 @@ commands:
 Agora seria testar a conexão, alterei o arquivo ``index.php`` para uma conexão com a base de dados e um retorno simples. O banco foi fornecido pelo próprio empregador
 ```php
 <?php
-$pdo = new PDO( "sqlsrv:server=example.com;database=db", "username", "password");
+$pdo = new PDO( "sqlsrv:server=example.com;database=db", 
+                "username", "password");
 
 $query = $pdo->query("SELECT * FROM contacts");
 
@@ -163,7 +164,10 @@ print_r($assoc);
 
 Fiz novamente o *upload*, e o que acontece?
 ```
-"SQLSTATE[IMSSP]: This extension requires the Microsoft ODBC Driver for SQL Server to communicate with SQL Server. Access the following URL to download the ODBC Driver for SQL Server for x64: https://go.microsoft.com/fwlink/?LinkId=163712"
+"SQLSTATE[IMSSP]: This extension requires the Microsoft ODBC Driver for 
+SQL Server to communicate with SQL Server. Access the following URL to 
+download the ODBC Driver for SQL Server for x64: 
+https://go.microsoft.com/fwlink/?LinkId=163712"
 ```
 Pela documentação da Microsoft, é necessário um *driver ODBC* para comunicar, então é ler, e adaptar ao *YAML*
 ```yaml
@@ -191,7 +195,8 @@ commands:
   # Driver ODBC
   05_odbc:
     command: |
-      curl https://packages.microsoft.com/config/rhel/7/prod.repo > /etc/yum.repos.d/mssql-release.repo
+      curl https://packages.microsoft.com/config/rhel/7/prod.repo > \
+        /etc/yum.repos.d/mssql-release.repo
       ACCEPT_EULA=Y yum install -y msodbcsql17
       ACCEPT_EULA=Y yum install -y mssql-tools
       export PATH="$PATH:/opt/mssql-tools/bin"
