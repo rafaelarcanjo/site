@@ -13,22 +13,22 @@ tags:
   - sqlsrv
 ---
 
-Novamente meu *job* foi aceito no portal *Freelancer*. Desta vez seria algo que não tenho muito conhecimento.
+Outra proposta minha foi aceita no portal *Freelancer*. Desta vez seria algo que não tenho muito conhecimento.
 Tenho conhecimento com *AWS* principalmente com *S3* e *EC2*, mas nunca fiquei cara a cara com a orquestração *Elastic Beanstalk*.
 
 Fui sincero na minha proposta, informando que minha área de maior conhecimento é Linux, mas tenho experiência com *Docker* e *Kubernetes*.
 
-O empregador rebateu perguntando se eu já trabalhei com *EB*, informei que não, mas como é um container baseado em *CentOS*, eu conseguiria me virar.
+O empregador rebateu perguntando se eu já trabalhei com *EB*, informei que não, mas como é um contêiner baseado em *CentOS*, eu conseguiria me virar.
 Fiz uma proposta informando que eu iria escrever as configurações, e após o OK, ele aceitaria minha proposta.
 
 Uma das melhores formas de aprender, é na marra!
 
 ## Poucas documentações
 Me deparei com poucas documentações informando como instalar os drivers *MSSQL* no *PHP* para Linux.
-A maioria já estava bem defasada. O que eu fiz? Instalar um *CentOS* virtualizado e ir procurando referências com o *pecl*.
+A maioria já estava bem defasada. O que eu fiz? Instalar um *CentOS* virtualizado e ir procurando documentação do *pecl*.
 
 ### Instalando no CentOS virtualizado
-Basicamente precisava instalar o *PHP*, *Pear*, os compiladores GCC e o *devel* do driver ODBC.
+Basicamente precisava instalar o *PHP*, *Pear*, os compiladores GCC e o *devel* do driver *ODBC*.
 ```shell
 yum update -y
 # Habilitando PHP7, pois o CentOS 7 vem com PHP5
@@ -37,7 +37,7 @@ yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm
 yum-config-manager --enable remi-php74
 yum install -y php php-common php-opcache php-mcrypt php-cli php-gd \
     php-curl php-mysqlnd php-pear php-devel gcc gcc-c++ unixODBC-devel
-# Verifique a versão do PHP
+# Verificando a versão do PHP
 php -v
 ```
 
@@ -50,7 +50,7 @@ echo extension=sqlsrv.so > /etc/php.d/sqlsrv.ini
 echo extension=pdo_sqlsrv.so > /etc/php.d/pdo_sqlsrv.ini
 ```
 
-Como eu não queria instalar o servidor *web*, vou rodar o *phpinfo()* pelo shell e abrir o html
+Como eu não queria instalar o servidor *web*, vou rodar o *phpinfo()* pelo shell
 ```shell
 echo "<?php
 phpinfo();" > phpinfo.php
@@ -115,18 +115,18 @@ Para criar a instância faça
 - **Platform** => **PHP** e deixe o restante como padrão;
 - Em **Application code** => **Upload your code**;
 - **Local file** => **Choose file** e envie o *.ZIP*;
-- Clique em **Create environment** e aguarde o deploy.
+- Clique em **Create environment** e aguarde o *deploy*.
 
 Se aparecer um OK, funcionou..... só que não!
 
 Clique em **Go to environment** e observe o *sqlsvr*.
 
 ## Primeiro problema
-Me deparei com esse problema quando eu queria atualizar somente o arquivo *PHP*. Se pegar o mesmo arquivo *.ZIP* e enviar é apresentado erros no deploy, mas por quê?
+Me deparei com esse problema quando eu queria atualizar somente o arquivo *PHP*. Se pegar o mesmo arquivo *.ZIP* e enviar é apresentado erros no *deploy*, mas por quê?
 
-Para enviar uma nova versão é ir em **Application versions** => **Upload** => selecionar a nova versão => **Actions** => Deploy.
+Para enviar uma nova versão é ir em **Application versions** => **Upload** => selecionar a nova versão => **Actions** => **Deploy**.
 
-Porque os comandos *pecl* quando executado novamente retornam erro, e o deploy finalizado com a saída de erro. A solução seria verificar se existem os arquivos *.SO* e não executar novamente
+Porque os comandos *pecl* quando executado novamente retornam erro, e o *deploy* finalizado com a saída de erro. A solução seria verificar se existem os arquivos *.SO* e não executar novamente
 ```yaml
 commands:
   # Instalação do Pear, compiladores e os headers    
