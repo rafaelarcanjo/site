@@ -19,7 +19,7 @@
                                 <span class="post-title">{{.Title}}</span>
                                 <span class="post-day">
 					{{ $mymonths := index $.Site.Data.mois.mois }}
-					{{ index $mymonths (printf "%2d" .Date.Month) }}
+					{{ .Date.Month }}
                                 </span>
                             </a>
                         </li>
