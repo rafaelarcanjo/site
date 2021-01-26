@@ -1,6 +1,6 @@
 ---
-title: "AWS Elastic Beanstalk MSSQL"
-date: 2020-09-15T18:50:00-03:00
+title: "Instalando driver MSSQL no PHP com AWS Elastic Beanstalk"
+date: 2021-01-15T18:50:00-03:00
 draft: false
 toc: false
 images:
@@ -8,6 +8,9 @@ tags:
   - aws
   - mssql
   - php 
+  - elasticbeanstalk
+  - pdo
+  - sqlsrv
 ---
 
 Novamente meu *job* foi aceito no portal *Freelancer*. Desta vez seria algo que não tenho muito conhecimento.
