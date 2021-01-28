@@ -31,7 +31,6 @@ aliases = ["sobre","curriculo","curriculum"]
 
 * **Técnico de Redes @ Prefeitura Municipal de Santa Luzia - Minas Gerais.**  
   Objetivo: Atividades de Backup, Administração de Servidores Linux (CentOS e Ubuntu Server) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Firewall (pfSense), Administração de Equipamentos de Rede (Switches Datacom e Mikrotik) e Implementação de serviços em Containers.
-
   Projetos executados:  
   **=>** Criação de portal Hotspot para atender os munícipes de Santa Luzia, usando pfSense, FreeRADIUS e PHP  
   **=>** Interligação de unidades com internet terceirizada, utilizando pfSense e Mikrotik com IPsec, distribuindo Hotspot com replicação no Captive Portal do pfSense;  
