@@ -13,7 +13,8 @@ aliases = ["sobre","curriculo","curriculum"]
 * **Tecnólogo em Análise e Desenvolvimento de Sistemas - Universidade Anhanguera**  
   06 DE 2009 - 06 DE 2016
 * **Curso Técnico em Informática - Colégio Técnico de Minas Gerais (COTEMIG)**  
-  02 DE 2004 - 02 DE 2007    
+  02 DE 2004 - 02 DE 2007
+  
 ---
 
 #### EXPERIÊNCIA
