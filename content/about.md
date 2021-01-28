@@ -14,18 +14,18 @@ aliases = ["sobre","curriculo","curriculum"]
   06 DE 2009 - 06 DE 2016
 * **Curso Técnico em Informática - Colégio Técnico de Minas Gerais (COTEMIG)**  
   02 DE 2004 - 02 DE 2007
-  
+
 ---
 
 #### EXPERIÊNCIA
 * **Analista de Suporte @ Transport Serviços Internacionais LTDA**  
-  Objetivo: Atividades de Backup, Administração de Servidores Windows (Windows 2008 e 2012), Linux (SUSE Enterprise e CentOS) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Servidor de e-mail (Exchange 2007), Administração de AD (Windows 2012 e Samba 3), Administração de Firewall (pfSense e IPTables) e Administração de DNS com Bind9.  
+    Objetivo: Atividades de Backup, Administração de Servidores Windows (Windows 2008 e 2012), Linux (SUSE Enterprise e CentOS) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Servidor de e-mail (Exchange 2007), Administração de AD (Windows 2012 e Samba 3), Administração de Firewall (pfSense e IPTables) e Administração de DNS com Bind9.  
 
-  Projetos executados:  
-  **=>** Migração de firewall descentralizado (Squid, SquidGuard, IPTables e OpenVPN) para pfSense;  
-  **=>** Interligação de filial em Mário Campos com Matriz em BH, utilizando pfSense com IPsec;  
-  **=>** Solução de backup com Bacula e FreeNAS com daemon Bacula-SD, substituindo robô de fita com trocas manuais;  
-  **=>** Substituição do software pago (PaperCut) por CUPS para recebimento de impressões remotas do Siscomex;  **=>** Migração do Active Directory do Windows 2008 para Windows 2012.
+    Projetos executados:  
+    **=>** Migração de firewall descentralizado (Squid, SquidGuard, IPTables e OpenVPN) para pfSense;  
+    **=>** Interligação de filial em Mário Campos com Matriz em BH, utilizando pfSense com IPsec;  
+    **=>** Solução de backup com Bacula e FreeNAS com daemon Bacula-SD, substituindo robô de fita com trocas manuais;  
+    **=>** Substituição do software pago (PaperCut) por CUPS para recebimento de impressões remotas do Siscomex;  **=>** Migração do Active Directory do Windows 2008 para Windows 2012.
 
 * **Técnico de Suporte @ PRODABEL – Empresa de Informática e Informação do Município de Belo Horizonte.**  
   Objetivo: Responsável pelo suporte técnico presencial e remoto ao gabinete do Prefeito do Município de Belo Horizonte. Auxílio ao gabinete do Prefeito Municipal de Belo Horizonte nas tomadas de decisões na área de tecnologia.
