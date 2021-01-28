@@ -44,7 +44,7 @@ aliases = ["sobre","curriculo","curriculum"]
   Projetos executados:  
   **=>** Realizado replicação e failover do MySQL utilizando Proxy SQL, entre os servidores físicos. Detalhes das configurações no Github https://github.com/rafaelarcanjo/ProxySQL;  
   **=>** Configurado NGINX com EC2 para prover alta disponibilidade dos serviços web;  
-  **=>** Redundância de backup utilizando o Backup com S3;  
+  **=>** Redundância de backup utilizando o Bacula com S3;  
   **=>** Configurado DNS com Bind9.  
   Projeto em andamento:  
   **=>** Migração do e-mail hospedado na Locaweb para solução em Zimbra.  
