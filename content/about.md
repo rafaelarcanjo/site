@@ -41,7 +41,6 @@ aliases = ["sobre","curriculo","curriculum"]
 * **Contrato pelo portal Freelancer.com @ Empresa sigilosa**  
   Cenário: A Empresa possui dois servidores PowerEdge R740XD, em localidades distintas, e solicitou configurar alta disponibilidade, utilizando os dois equipamentos.  
   Objetivo: Migrar e Replicar Serviços para Nuvem, Configurar Alta Disponibilidade.
-
   Projetos executados:  
   **=>** Realizado replicação e failover do MySQL utilizando Proxy SQL, entre os servidores físicos. Detalhes das configurações no Github https://github.com/rafaelarcanjo/ProxySQL;  
   **=>** Configurado NGINX com EC2 para prover alta disponibilidade dos serviços web;  
@@ -55,7 +54,6 @@ aliases = ["sobre","curriculo","curriculum"]
 * **Contrato pelo portal Freelancer.com @ Laura Assis - Empresa Sigilosa**  
   Cenário: Migrar serviços físicos para nuvem (Digital Ocean) utilizando orquestração de Containers.  
   Objetivo: Migrar serviços web, bancos de dados e apresentar soluções de backup.
-
   Projetos executados:  
   **=>** Realizado migrações dos serviços web e bancos de dados (MySQL e PostgreSQL) para containers com Docker;  
   **=>** Orquestração dos containers com Docker Compose;  
@@ -65,7 +63,6 @@ aliases = ["sobre","curriculo","curriculum"]
 
 * **Contrato pelo Portal Freelancer.com @ Jefferson T - AzureWEB do Brasil**  
   Objetivo: Implementar um serviço de atualização automática de DNS.  
-
   Projetos executados:  
   **=>** Implementação de atualização automática de registro diretamente no Bind9;  
   **=>** Implementação de atualização automática pelo CPanel, utilizando Perl e Shell Script, fazendo chamadas na API do CPanel. Escolhida pelo cliente, detalhes no Github https://github.com/rafaelarcanjo/azurewebr
@@ -73,7 +70,6 @@ aliases = ["sobre","curriculo","curriculum"]
 * **Contrato pelo portal 99Freelas @ Marcelo Maia - Empresa CopywriterLAB**
   Cenário: Site em WordPress sofreu ataque por Apache CVE-2017-5638.  
   Objetivo: Fornecer uma camada extra de segurança.
-
   Projetos executados:  
   **=>** Migração para NGINX, realizando Proxy Pass para o PHP-FPM diretamente, habilitando configuração de “split_path_info”;  
   **=>** Alteração das configurações de SSH, para prover uma maior segurança.
