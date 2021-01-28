@@ -78,6 +78,7 @@ aliases = ["sobre","curriculo","curriculum"]
 
 #### CERTIFICAÇÕES
 * LPI Linux Essentials
+
 ---
 
 #### COMPETÊNCIAS
@@ -99,6 +100,8 @@ aliases = ["sobre","curriculo","curriculum"]
 * Serviços em nuvens, como AWS, Google Cloud, Azure e Digital Ocean (conhecimentos intermediários e em estudos);
 * Serviços web (NGINX, Apache e HAProxy);
 * Shell Script.
+
+---
 
 #### Contatos
 **E-mail:** [rafael@libre.tec.br](mailto:rafael@libre.tec.br)  
