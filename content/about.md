@@ -72,6 +72,7 @@ aliases = ["sobre","curriculo","curriculum"]
   Objetivo: Fornecer uma camada extra de segurança.
   Projetos executados:  
   **=>** Migração para NGINX, realizando Proxy Pass para o PHP-FPM diretamente, habilitando configuração de “split_path_info”;  
+  **=>** Alteração das configurações de SSH, para prover uma maior segurança.
 
 ---
 
