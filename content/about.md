@@ -20,7 +20,6 @@ aliases = ["sobre","curriculo","curriculum"]
 #### EXPERIÊNCIA
 * **Analista de Suporte @ Transport Serviços Internacionais LTDA**  
     Objetivo: Atividades de Backup, Administração de Servidores Windows (Windows 2008 e 2012), Linux (SUSE Enterprise e CentOS) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Servidor de e-mail (Exchange 2007), Administração de AD (Windows 2012 e Samba 3), Administração de Firewall (pfSense e IPTables) e Administração de DNS com Bind9.  
-
     Projetos executados:  
     **=>** Migração de firewall descentralizado (Squid, SquidGuard, IPTables e OpenVPN) para pfSense;  
     **=>** Interligação de filial em Mário Campos com Matriz em BH, utilizando pfSense com IPsec;  
