@@ -16,18 +16,21 @@ Abaixo irei descrever como fiz no Ubuntu 20.04 e no openSUSE 15.2.
 
 ## Ubuntu 20.04
 Baixando e instalando:
+
 ```shell
 sudo wget -c https://raw.github.com/KittyKatt/screenFetch/master/screenfetch-dev -O /usr/bin/screenfetch
 chmod +x /usr/bin/screenfetch
 ```
 
 Pelo *motd* do Ubuntu ser meio poluído, na minha opinião, eu prefiro usar os arquivos que eu editei com o tempo, então vou fazer *backup* dos arquivos originais e configurar com os meus.
+
 ```shell
 mkdir ~/bkp_motd
 mv /etc/update-motd.d/* ~/bkp_motd
 ```
 
 - Arquivo ``00-header``  
+
 ```shell
 cat > /etc/update-motd.d/00-header
 #!/bin/sh
@@ -39,6 +42,7 @@ screenfetch
 ```
 
 - Arquivo ``10-sysinfo``  
+
 ```shell
 cat > /etc/update-motd.d/10-sysinfo
 #!/bin/bash
@@ -61,12 +65,14 @@ echo
 ```
 
 - Arquivo ``90-footer``  
+
 ```shell
 cat > /etc/update-motd.d/90-footer
 #!/bin/sh
 [ -f /etc/motd.tail ] && cat /etc/motd.tail || true
 ```
 - Alterando as permissões
+
 ```shell
 chmod +x /etc/update-motd.d/*
 ```
@@ -77,17 +83,20 @@ E pronto, no Ubuntu ele já está pré configurado.
 Já no openSUSE, é necessário configurar algumas coisas e fazer uma gambiarra.
 
 Os arquivos devem ser os mesmos do Ubuntu, porém a pasta deve ser criada.
+
 ```shell
 mkdir /etc/update-motd.d/
 ```
 Agora é só criar os arquivos ``00-header``, ``10-sysinfo`` e ``90-footer`` e alterar a permissão, conforme procedimento do Ubuntu.
 
 - Instalando o ScreenFetch
+
 ```shell
 sudo zypper in screenfetch
 ```
 
 - Alterar o arquivo ``/etc/pam.d/sshd``
+
 ```shell
 ...
 session optional pam_keyinit.so force revoke
