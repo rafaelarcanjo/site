@@ -95,6 +95,7 @@ session optional pam_motd.so motd=/run/motd.dynamic
 ```
 
 - Adicionar a linha para gerar o *motd* no *cron*, não quero sair alterando vários arquivos do *SO*.
+
 ```shell
 crontab -e
 * * * * * find /etc/update-motd.d/ -type f -executable -exec {} \; > /run/motd.dynamic
