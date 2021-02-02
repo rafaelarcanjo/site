@@ -28,7 +28,6 @@ mv /etc/update-motd.d/* ~/bkp_motd
 ```
 
 - Arquivo ``00-header``
-
 ```shell
 cat > /etc/update-motd.d/00-header
 #!/bin/sh
@@ -41,7 +40,6 @@ screenfetch
 ```
 
 - Arquivo ``10-sysinfo``
-
 ```shell
 cat > /etc/update-motd.d/10-sysinfo
 #!/bin/bash
@@ -64,7 +62,6 @@ echo
 ```
 
 - Arquivo ``90-footer``
-
 ```shell
 cat > /etc/update-motd.d/90-footer
 #!/bin/sh
