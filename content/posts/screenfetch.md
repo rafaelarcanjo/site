@@ -32,9 +32,8 @@ mv /etc/update-motd.d/* ~/bkp_motd
 cat > /etc/update-motd.d/00-header
 #!/bin/sh
 [ -r /etc/lsb-release ] && . /etc/lsb-release
-
 if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
-        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
+    DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 fi
 screenfetch
 ```
