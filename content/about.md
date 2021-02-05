@@ -11,7 +11,7 @@ aliases = ["sobre","curriculo","curriculum"]
 * **Tecnólogo em Redes de Computadores - Estácio de Sá**  
   01 DE 2014 - 01 DE 2016
 * **Tecnólogo em Análise e Desenvolvimento de Sistemas - Universidade Anhanguera**  
-  06 DE 2009 - 06 DE 2016
+  06 DE 2009 - 06 DE 2012
 * **Curso Técnico em Informática - Colégio Técnico de Minas Gerais (COTEMIG)**  
   02 DE 2004 - 02 DE 2007
 
