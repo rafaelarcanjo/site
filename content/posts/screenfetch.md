@@ -103,11 +103,17 @@ session optional pam_keyinit.so force revoke
 session optional pam_motd.so motd=/run/motd.dynamic
 ```
 
-- Adicionar a linha para gerar o *motd* no *cron*, não quero sair alterando vários arquivos do *SO*.
+- Alterando as permissões
 
 ```shell
-crontab -e
-* * * * * find /etc/update-motd.d/ -type f -executable -exec {} \; > /run/motd.dynamic
+chmod +x /etc/update-motd.d/*
+```
+
+- Adicionando o comando para executar assim que logar via SSH ``/etc/ssh/sshd_config``
+
+```shell
+...
+ForceCommand find /etc/update-motd.d/ -type f -executable -exec {} \;
 ```
 
 E fim!
