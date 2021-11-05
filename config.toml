@@ -142,9 +142,9 @@ disqusShortname = "libre-tec-br"
     name = "github"
     url  = "https://github.com/rafaelarcanjo"
 
-  #[[params.social]]
-  #  name = "linkedin"
-  #  url  = "https://www.linkedin.com/"
+  [[params.social]]
+   name = "linkedin"
+   url  = "https://www.linkedin.com/in/rafael-arcanjo-silva-devops/"
 
   #[[params.social]]
   #  name = "stackoverflow"
