@@ -32,7 +32,7 @@ disqusShortname = "libre-tec-br"
   posts = "/posts/:year/:month/:title/"
 
 [author]
-  name = "Rafael Arcanjo"
+  name = "Rafael Silva"
 
 #[blackfriday]
 #  hrefTargetBlank = true
@@ -54,7 +54,7 @@ disqusShortname = "libre-tec-br"
   keywords = ""
   images = [""]
 
-  homeSubtitle = "Minhas anotações e Projetos - Por Rafael Arcanjo"
+  homeSubtitle = "Minhas anotações e Projetos - Por Rafael Silva"
 
   defaultTheme = "dark"
 
@@ -91,7 +91,7 @@ disqusShortname = "libre-tec-br"
   # If you want, you can easily override the default footer with your own content. 
   #
   footerLeft = "Criado com <a href=\"http://gohugo.io\">Hugo</a>"
-  footerRight = "Feito com &#10084; por Rafael Arcanjo"
+  footerRight = "Feito com &#10084; por Rafael Silva"
 
   # Colors for favicons
   #
