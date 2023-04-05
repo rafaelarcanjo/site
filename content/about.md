@@ -18,50 +18,7 @@ aliases = ["sobre","curriculo","curriculum"]
 ---
 
 #### EXPERIÊNCIA
-* **Analista de Suporte @ Transport Serviços Internacionais LTDA**  
-    Objetivo: Atividades de Backup, Administração de Servidores Windows (Windows 2008 e 2012), Linux (SUSE Enterprise e CentOS) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Servidor de e-mail (Exchange 2007), Administração de AD (Windows 2012 e Samba 3), Administração de Firewall (pfSense e IPTables) e Administração de DNS com Bind9.  
-    Projetos executados:  
-    **=>** Migração de firewall descentralizado (Squid, SquidGuard, IPTables e OpenVPN) para pfSense;  
-    **=>** Interligação de filial em Mário Campos com Matriz em BH, utilizando pfSense com IPsec;  
-    **=>** Solução de backup com Bacula e FreeNAS;  
-    **=>** Substituição do software pago (PaperCut) por CUPS para recebimento de impressões remotas do Siscomex;  **=>** Migração do Active Directory do Windows 2008 para Windows 2012.
-
-* **Técnico de Suporte @ PRODABEL – Empresa de Informática e Informação do Município de Belo Horizonte.**  
-  Objetivo: Responsável pelo suporte técnico presencial e remoto ao gabinete do Prefeito do Município de Belo Horizonte.
-
-* **Técnico de Redes @ Prefeitura Municipal de Santa Luzia - Minas Gerais.**  
-  Objetivo: Atividades de Backup, Administração de Servidores Linux (CentOS e Ubuntu Server) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Firewall (pfSense), Administração de Equipamentos de Rede (Switches Datacom e Mikrotik) e Implementação de serviços em Containers.
-  Projetos executados:  
-  **=>** Criação de portal Hotspot para atender os munícipes de Santa Luzia, usando pfSense, FreeRADIUS e PHP;
-  **=>** Interligação de unidades com internet terceirizada, utilizando pfSense e Mikrotik com IPsec, distribuindo Hotspot com replicação no Captive Portal do pfSense;  
-  **=>** Centralização de logs com Graylog;  
-  **=>** Implantação de Backup com Bacula em Storage;  
-  **=>** Migração de serviços físicos para Docker, reduzindo consumo de recursos.
-
-* **Contrato pelo portal Freelancer.com @ Empresa sigilosa**  
-  Cenário: A Empresa possui dois servidores PowerEdge R740XD, em localidades distintas, e solicitou configurar alta disponibilidade, utilizando os dois equipamentos.  
-  Objetivo: Migrar e Replicar Serviços para Nuvem, Configurar Alta Disponibilidade.  
-  Projetos executados:  
-  **=>** Realizado replicação e failover do MySQL utilizando Proxy SQL, entre os servidores físicos. Detalhes das configurações no Github https://github.com/rafaelarcanjo/ProxySQL;  
-  **=>** Configurado NGINX com EC2 para prover alta disponibilidade dos serviços web;  
-  **=>** Redundância de backup utilizando o Bacula com S3;  
-  **=>** Configurado DNS com Bind9.  
-  Projeto em andamento:  
-  **=>** Migração do e-mail hospedado na Locaweb para solução em Zimbra.  
-  Projetos em estudo:  
-  **=>** Migração do Microsoft Hyper-V para VMware ESXi ou OpenStack.
-
-* **Contrato pelo portal Freelancer.com @ Laura Assis - Empresa Sigilosa**  
-  Cenário: Migrar serviços físicos para nuvem (Digital Ocean) utilizando orquestração de Containers.  
-  Objetivo: Migrar serviços web, bancos de dados e apresentar soluções de backup.  
-  Projetos executados:  
-  **=>** Realizado migrações dos serviços web e bancos de dados (MySQL e PostgreSQL) para containers com Docker;  
-  **=>** Orquestração dos containers com Docker Swarm;  
-  **=>** Configuração do NGINX para alta disponibilidade e Memcached para otimizar o desempenho;  
-  **=>** Implementação do Bacula para backup diário das bases de dados em storage local e em SOS (Spaces Object Storage - Digital Ocean);  
-  **=>** Orientação sobre o Backup Automático de Droplet.  
-
-* **DevOps Manager @ Alfasoft - Alfaiate Systems Lda**
+* **DevOps Engineer @ Alfasoft - Alfaiate Systems Lda**
   Objetivo: Automatização de *deploys* utilizando Jenkins, Ansible e Docker Swarm, com redundância geográfica, suporte do ambiente Cloud da companhia e clientes, monitorando e propondo melhorias de arquitetura, configurações e perfomance, diagnóstico de problemas, troubleshoot e desenvolvimento de soluções de monitoramento de sistemas. Prestando suporte para a equipe de desenvolvimento e QA.
   Projetos executados:  
   **=>** Criação de redundância geográfica utilizando cluster Swarm e Percona DB, com servidores Linux em servidores dedicados e também utilizando Route Manager da Azure;  
@@ -71,31 +28,42 @@ aliases = ["sobre","curriculo","curriculum"]
   **=>** Deploys automatizados no Swarm utilizando GitFlow, Jenkins e Ansible;  
   **=>** Monitoramento com Prometheus, Grafana, Graylog e Zabbix.  
 
+* **Contrato pelo portal Freelancer.com @ Empresa sigilosa**  
+  Cenário: A Empresa possui dois servidores PowerEdge R740XD, em localidades distintas, e solicitou configurar alta disponibilidade, utilizando os dois equipamentos.  
+  Objetivo: Migrar e Replicar Serviços para Nuvem, Configurar Alta Disponibilidade.  
+
+* **Contrato pelo portal Freelancer.com @ Laura Assis - Empresa Sigilosa**  
+  Cenário: Migrar serviços físicos para nuvem (Digital Ocean) utilizando orquestração de Containers.  
+  Objetivo: Migrar serviços web, bancos de dados e apresentar soluções de backup.  
+
+* **Técnico de Redes @ Prefeitura Municipal de Santa Luzia - Minas Gerais.**  
+  Objetivo: Atividades de Backup, Administração de Servidores Linux (CentOS e Ubuntu Server) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Firewall (pfSense), Administração de Equipamentos de Rede (Switches Datacom e Mikrotik) e Implementação de serviços em Containers.
+
+* **Técnico de Suporte @ PRODABEL – Empresa de Informática e Informação do Município de Belo Horizonte.**  
+  Objetivo: Responsável pelo suporte técnico presencial e remoto ao gabinete do Prefeito do Município de Belo Horizonte.
+
+* **Analista de Suporte @ Transport Serviços Internacionais LTDA**  
+    Objetivo: Atividades de Backup, Administração de Servidores Windows (Windows 2008 e 2012), Linux (SUSE Enterprise e CentOS) e FreeBSD (FreeNAS e pfSense), Implementação de Solução de Gerência de Chamados (GLPI), Administração de Servidor de e-mail (Exchange 2007), Administração de AD (Windows 2012 e Samba 3), Administração de Firewall (pfSense e IPTables) e Administração de DNS com Bind9.
+
 ---
 
 #### CERTIFICAÇÕES
 * LPI Linux Essentials
-
+* Microsoft Certified: Azure Fundamentals
 ---
 
 #### COMPETÊNCIAS
-* Linux (principais distribuições: Debian, openSUSE e Red Hat);
-* MikroTik (RouterOS);
-* FreeBSD (pfSense e FreeNAS);
-* Soluções de e-mail (Postfix, Dovecot e Zimbra);
-* Bacula;
-* Virtualização (KVM e Proxmox) ;
-* Firewall (pfSense, UFW e IPTables);
-* Orquestração de container com Docker Swarm e Kubernetes;
-* Monitoramento (Prometheus, Grafana, Graylog e Zabbix);
-* Banco de Dados (MySQL, PostgreSQL, SQL Server e Hasura GraphQL);
-* Serviços em nuvens, como AWS, Google Cloud, Azure e Digital Ocean (conhecimentos intermediários e em estudos);
-* Serviços web (NGINX, Apache e HAProxy);
-* Automatização (Ansible, Vagrant, Jenkins e Shell Script).
+* Integração contínua e entrega contínua (Jenkins, Gitlab, Github, Bitbucket e Azure DevOps);
+* Automação de infraestrutura (Ansible e Terraform);
+* Monitoramento (Zabbix, Prometheus e Grafana);
+* Virtualização (Proxmox e Cloud);
+* Containers (Docker Swarm e Kubernetes);
+* Cloud (Azure, GCP e AWS);
+* Procuro sempre trabalhar em colaboração com desenvolvedores e equipes de operações, a fim de garantir a integridade e segurança do ambiente de desenvolvimento e produção, bem como a eficiência dos processos de implantação e entrega de software.
 
 ---
 
-#### Contatos
+#### CONTATOS
 **E-mail:** [rafael@libre.tec.br](mailto:rafael@libre.tec.br)  
 **Github:** [https://github.com/rafaelarcanjo](https://github.com/rafaelarcanjo)  
 **LinkedIn:** [https://www.linkedin.com/in/rafael-arcanjo-silva-devops/](https://www.linkedin.com/in/rafael-arcanjo-silva-devops/)

@@ -1,13 +1,13 @@
 .header {
-  background: $light-background-header;
+  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
 
-  @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+  .dark-theme & {
+    background: #252627;
   }
 
   &__right {

@@ -1,9 +1,11 @@
 .menu {
-  background: $light-background-header;
+  background: #fafafa;
+  border-right: 1px solid;
+  margin-right: 18px;
   z-index: 9999;
 
-  @media (prefers-color-scheme: dark) {
-    background: $dark-background-header;
+  .dark-theme & {
+    background: #252627;
   }
 
   @media #{$media-size-phone} {
@@ -47,11 +49,6 @@
     fill: currentColor;
     margin-left: 10px;
     cursor: pointer;
-    display: none;
-
-    @media #{$media-size-phone} {
-      display: block;
-    }
   }
 
   a {

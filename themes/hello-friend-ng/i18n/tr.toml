@@ -34,6 +34,3 @@ other = "İçindekiler"
 [wordCount]
 one   = "One Kelime"
 other = "{{ .Count }} Kelime"
-
-[lastModified]
-other = "Son güncelleme"

@@ -4,6 +4,72 @@
   margin-right: auto;
 }
 
+input,
+textarea {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 18px;
+  margin: 5px 0 15px 0;
+  background: $light-background-secondary;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  appearance: none;
+  outline: none;
+
+  .dark-theme & {
+    background: $dark-background-secondary;
+    color: inherit;
+  }
+
+  /* variants */
+
+  &.outline {
+    background: transparent;
+    border-color: $light-background-secondary;
+    box-shadow: none;
+    padding: 8px 18px;
+
+    .dark-theme & {
+      border-color: $dark-background-secondary;
+      color: inherit;
+    }
+
+    :hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+
+  &.primary {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+
+    &:hover {
+      box-shadow: 0 2px 6px rgba(50, 50, 93, .21), 0 1px 3px rgba(0, 0, 0, .08);
+    }
+  }
+
+  &.link {
+    background: none;
+    font-size: 1rem;
+  }
+
+  &.small {
+    font-size: .8rem;
+  }
+
+  &.wide {
+    min-width: 200px;
+    padding: 14px 24px;
+  }
+}
+
+
+
 button,
 .button,
 a.button {
@@ -23,10 +89,12 @@ a.button {
   cursor: pointer;
   outline: none;
 
-  @media (prefers-color-scheme: dark) {
+  .dark-theme & {
     background: $dark-background-secondary;
     color: inherit;
   }
+
+  /* variants */
 
   &.outline {
     background: transparent;
@@ -34,7 +102,7 @@ a.button {
     box-shadow: none;
     padding: 8px 18px;
 
-    @media (prefers-color-scheme: dark) {
+    .dark-theme & {
       border-color: $dark-background-secondary;
       color: inherit;
     }
@@ -89,7 +157,7 @@ a.button {
     cursor: pointer;
     outline: none;
 
-    @media (prefers-color-scheme: dark) {
+    .dark-theme & {
       background: $dark-background-secondary;
       color: inherit;
     }

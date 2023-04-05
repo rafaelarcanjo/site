@@ -1,32 +1,29 @@
 {{ define "main" }}
-    {{ $paginator := .Paginate .Data.Pages }}
-    
     <main class="posts">
         <h1>{{ .Title }}</h1>
 
-        {{ if .Content }}
+        {{- if .Content }}
             <div class="content">{{ .Content }}</div>
-        {{ end }}
+        {{- end }}
 
-        {{ range $paginator.Pages.GroupByDate "2006" }}
+        {{- range .Data.Pages.GroupByDate "2006" }}
             <div class="posts-group">
                 <div class="post-year">{{ .Key }}</div>
 
                 <ul class="posts-list">
-                    {{ range .Pages }}
+                    {{- range .Pages }}
                         <li class="post-item">
                             <a href="{{.Permalink}}">
                                 <span class="post-title">{{.Title}}</span>
                                 <span class="post-day">
-					{{ $mymonths := index $.Site.Data.mois.mois }}
-					{{ index $mymonths (printf "%02d" .Date.Month) }}
+                                    {{ $mymonths := index $.Site.Data.mois.mois }}
+                					{{ index $mymonths (printf "%02d" .Date.Month) }}
                                 </span>
                             </a>
                         </li>
-                    {{ end }}
+                    {{- end }}
                 </ul>
             </div>
-        {{ end }}
-    {{ partial "pagination.html" . }}
+        {{- end }}
     </main>
 {{ end }}
