@@ -1,7 +1,7 @@
 ---
 title: "Documentação IPsec Ubuntu-Mikrotik"
 date: 2021-02-02T07:49:18-03:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
