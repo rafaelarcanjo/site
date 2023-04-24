@@ -7,7 +7,7 @@ aliases = ["sobre","curriculo","curriculum"]
 +++
 #### FORMAÇÃO
 * **Especialização em Projetos de Redes e Computação em Nuvens - Cruzeiro do Sul**  
-  01 DE 2020 - Em andamento 
+  10 DE 2020 - 04 DE 2022
 * **Tecnólogo em Redes de Computadores - Estácio de Sá**  
   01 DE 2014 - 01 DE 2016
 * **Tecnólogo em Análise e Desenvolvimento de Sistemas - Universidade Anhanguera**  
